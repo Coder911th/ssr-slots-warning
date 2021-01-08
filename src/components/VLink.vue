@@ -10,6 +10,7 @@
 import {computed, PropType} from 'vue'
 
 export default {
+  name: 'VLink',
   props: {
     to: {
       type: [Object, String],
