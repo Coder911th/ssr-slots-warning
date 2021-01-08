@@ -1,0 +1,40 @@
+{
+  "name": "ssr-slots-warning",
+  "version": "1.0.0",
+  "description": "Demo vue-next bug",
+  "main": "index.js",
+  "scripts": {
+    "client:build": "webpack -c webpack.client.js --watch",
+    "ssr:build": "webpack -c webpack.ssr.js --watch",
+    "ssr:start": "nodemon -w ./ssr -x node --inspect=8900 ssr/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Coder911th/ssr-slots-warning.git"
+  },
+  "keywords": [],
+  "author": "Coder911th <qqcoder911th@gmail.com> (https://github.com/Coder911th)",
+  "bugs": {
+    "url": "https://github.com/Coder911th/ssr-slots-warning/issues"
+  },
+  "homepage": "https://github.com/Coder911th/ssr-slots-warning#readme",
+  "dependencies": {
+    "@vue/server-renderer": "3.0.5",
+    "express": "4.17.1",
+    "vue": "3.0.5",
+    "vue-router": "4.0.2"
+  },
+  "devDependencies": {
+    "@vue/compiler-sfc": "3.0.5",
+    "css-loader": "5.0.1",
+    "handlebars": "^4.7.6",
+    "handlebars-loader": "1.7.1",
+    "nodemon": "^2.0.6",
+    "null-loader": "4.0.1",
+    "style-loader": "2.0.0",
+    "vue-loader": "16.1.2",
+    "webpack": "5.11.1",
+    "webpack-cli": "4.3.1",
+    "webpack-node-externals": "2.5.2"
+  }
+}
